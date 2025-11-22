@@ -9,25 +9,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://portfolio-5ff36.web.app/assets/logo.png">
-    <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
-    <!-- Loading Animation -->
-    <div class="loader" id="loader">
-        <div class="loader-content">
-            <div class="loader-logo">
-                <span class="logo-letter">M</span>
-                <span class="logo-letter">W</span>
-            </div>
-            <div class="loader-spinner"></div>
-            <p class="loader-text">Loading Portfolio...</p>
-            <div class="loader-progress">
-                <div class="loader-progress-bar"></div>
-            </div>
-        </div>
-    </div>
-
     <!-- Theme Toggle Button -->
     <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
         <i class="fas fa-moon" id="themeIcon"></i>
@@ -52,7 +36,7 @@
         <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
 
-    <!-- Header Section with Profile Picture -->
+    <!-- Header Section -->
     <header class="modern-header">
         <div class="container">
             <div class="header-content">
@@ -62,15 +46,13 @@
                         <img src="DSC6284_01.jpg" alt="Mohamed Waleed" class="profile-img">
                     </div>
                 </div>
-                
                 <div class="header-text">
-                    <h1 class="glitch-text" data-text="Mohamed Wajihadeen Mohamed Waleed">Mohamed Wajihadeen Mohamed Waleed</h1>
+                    <h1 class="glitch-text">Mohamed Wajihadeen Mohamed Waleed</h1>
                     <div class="typing-container">
                         <span class="typing-text"></span>
                         <span class="cursor">|</span>
                     </div>
                     <p class="subtitle">Passionate about Technology, Innovation & Connectivity 🚀</p>
-                    
                     <div class="header-buttons">
                         <a href="uploads/Waleed_CV.pdf" target="_blank" class="modern-btn primary-btn">
                             <i class="fas fa-download"></i> Download CV
@@ -92,44 +74,37 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="title-underline"></div>
             </div>
-            
             <div class="about-grid">
                 <div class="about-card glass-card">
                     <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3>Full-Stack Developer</h3>
-                    <p>Specialized in creating responsive, interactive, and user-friendly web applications using modern technologies like React, Node.js, and MongoDB.</p>
+                    <p>Specialized in creating responsive, interactive web applications using React, Node.js, and MongoDB.</p>
                 </div>
-                
                 <div class="about-card glass-card">
                     <div class="card-icon"><i class="fas fa-network-wired"></i></div>
                     <h3>Network Technician</h3>
-                    <p>Pursuing NVQ Level 4 – Computer Network Technician (CISCO CCNAv7) at NVTI, Narahenpita. Expert in LAN/WAN, VLANs, DHCP, and Routing.</p>
+                    <p>Pursuing NVQ Level 4 – CISCO CCNAv7 at NVTI. Expert in LAN/WAN, VLANs, DHCP, and Routing.</p>
                 </div>
-                
                 <div class="about-card glass-card">
                     <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
                     <h3>Tech Enthusiast</h3>
-                    <p>Passionate about learning, problem-solving, and contributing to open-source projects. Always exploring new technologies.</p>
+                    <p>Passionate about learning, problem-solving, and contributing to open-source projects.</p>
                 </div>
             </div>
-            
             <div class="about-text glass-card">
-                <p class="highlight-text">
-                    Hi, I'm <strong>Mohamed Wajihadeen Mohamed Waleed</strong>, a passionate 
-                    <strong>Full-Stack Web Developer</strong> and <strong>Network Technician</strong> from Sri Lanka 🇱🇰
-                </p>
-                <p>With a strong foundation in front-end and back-end development, I continuously explore new technologies and frameworks to enhance my skills. I enjoy working with React, Node.js, and MongoDB to build scalable, modern full-stack applications.</p>
+                <p class="highlight-text">Hi, I'm <strong>Mohamed Wajihadeen Mohamed Waleed</strong>, a passionate <strong>Full-Stack Web Developer</strong> and <strong>Network Technician</strong> from Sri Lanka 🇱🇰</p>
+                <p>With a strong foundation in front-end and back-end development, I continuously explore new technologies. I enjoy working with React, Node.js, and MongoDB to build scalable applications.</p>
                 <p>I'm deeply passionate about learning, problem-solving, and contributing to open-source projects. Let's build something amazing together!</p>
                 <div class="social-links">
-                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-icon" aria-label="Credly"><i class="fas fa-award"></i></a>
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-icon"><i class="fas fa-award"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NEW: Timeline Section -->
+    <!-- Timeline Section -->
     <section id="timeline" class="modern-section fade-in">
         <div class="container">
             <div class="section-header">
@@ -137,7 +112,6 @@
                 <h2 class="section-title">My Journey</h2>
                 <div class="title-underline"></div>
             </div>
-            
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
@@ -148,7 +122,6 @@
                         <p>Computer Network Technician at NVTI Narahenpita. Mastering Cisco networking, routing protocols, VLANs, and network security.</p>
                     </div>
                 </div>
-                
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="glass-card timeline-content">
@@ -158,44 +131,40 @@
                         <p>Completed multiple certifications from University of Moratuwa in Web Development, Python Programming, and Software Engineering.</p>
                     </div>
                 </div>
-                
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="glass-card timeline-content">
                         <div class="timeline-icon"><i class="fas fa-shield-alt"></i></div>
                         <span class="timeline-date">2024</span>
                         <h3>Cybersecurity Certified</h3>
-                        <p>Achieved ISC2 Certified in Cybersecurity (CC) credential. Completed all 5 security domains including Network Security and Access Controls.</p>
+                        <p>Achieved ISC2 Certified in Cybersecurity (CC) credential. Completed all 5 security domains including Network Security.</p>
                     </div>
                 </div>
-                
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="glass-card timeline-content">
                         <div class="timeline-icon"><i class="fas fa-robot"></i></div>
                         <span class="timeline-date">2024</span>
                         <h3>AI & Automation</h3>
-                        <p>Completed Microsoft & LinkedIn Generative AI career essentials. Learned Responsible AI practices and Microsoft Copilot integration.</p>
+                        <p>Completed Microsoft & LinkedIn Generative AI career essentials. Learned Responsible AI and Microsoft Copilot.</p>
                     </div>
                 </div>
-                
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="glass-card timeline-content">
                         <div class="timeline-icon"><i class="fas fa-server"></i></div>
                         <span class="timeline-date">2024</span>
                         <h3>Server Administration</h3>
-                        <p>Hands-on experience with Windows Server, RAID configuration, Active Directory, DNS, DHCP, and Windows Deployment Services.</p>
+                        <p>Hands-on experience with Windows Server, RAID configuration, Active Directory, DNS, DHCP, and WDS.</p>
                     </div>
                 </div>
-                
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="glass-card timeline-content">
                         <div class="timeline-icon"><i class="fas fa-tools"></i></div>
                         <span class="timeline-date">2023</span>
                         <h3>Hardware Technician</h3>
-                        <p>Completed Cisco Computer Hardware Basics certification. Experience in Mac desktop repair, power supply replacement, and diagnostics.</p>
+                        <p>Completed Cisco Computer Hardware Basics. Experience in Mac desktop repair and diagnostics.</p>
                     </div>
                 </div>
             </div>
@@ -210,77 +179,42 @@
                 <h2 class="section-title">Skills & Expertise</h2>
                 <div class="title-underline"></div>
             </div>
-            
             <div class="skills-container">
                 <div class="skill-category glass-card">
-                    <div class="category-header">
-                        <span class="category-icon">🌐</span>
-                        <h3>Web Development</h3>
-                    </div>
+                    <div class="category-header"><span class="category-icon">🌐</span><h3>Web Development</h3></div>
                     <div class="skills-list">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span><span class="skill-tag">Vue.js</span><span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span><span class="skill-tag">MongoDB</span><span class="skill-tag">MySQL</span><span class="skill-tag">Git</span>
                     </div>
                 </div>
-
                 <div class="skill-category glass-card">
-                    <div class="category-header">
-                        <span class="category-icon">🛰️</span>
-                        <h3>Networking & IT</h3>
-                    </div>
+                    <div class="category-header"><span class="category-icon">🛰️</span><h3>Networking & IT</h3></div>
                     <div class="skills-list">
-                        <span class="skill-tag">Cisco CCNA</span>
-                        <span class="skill-tag">LAN/WAN</span>
-                        <span class="skill-tag">VLANs</span>
-                        <span class="skill-tag">DHCP</span>
-                        <span class="skill-tag">NAT</span>
-                        <span class="skill-tag">Routing</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Windows Server</span>
-                        <span class="skill-tag">Cybersecurity</span>
+                        <span class="skill-tag">Cisco CCNA</span><span class="skill-tag">LAN/WAN</span><span class="skill-tag">VLANs</span>
+                        <span class="skill-tag">DHCP</span><span class="skill-tag">NAT</span><span class="skill-tag">Routing</span>
+                        <span class="skill-tag">Linux</span><span class="skill-tag">Windows Server</span><span class="skill-tag">Cybersecurity</span>
                     </div>
                 </div>
-
                 <div class="skill-category glass-card">
-                    <div class="category-header">
-                        <span class="category-icon">🤖</span>
-                        <h3>AI & Automation</h3>
-                    </div>
+                    <div class="category-header"><span class="category-icon">🤖</span><h3>AI & Automation</h3></div>
                     <div class="skills-list">
-                        <span class="skill-tag">Generative AI</span>
-                        <span class="skill-tag">AI for Business</span>
-                        <span class="skill-tag">Responsible AI</span>
-                        <span class="skill-tag">Microsoft Copilot</span>
-                        <span class="skill-tag">DevOps</span>
+                        <span class="skill-tag">Generative AI</span><span class="skill-tag">AI for Business</span>
+                        <span class="skill-tag">Responsible AI</span><span class="skill-tag">Microsoft Copilot</span><span class="skill-tag">DevOps</span>
                     </div>
                 </div>
-
                 <div class="skill-category glass-card">
-                    <div class="category-header">
-                        <span class="category-icon">💻</span>
-                        <h3>Programming</h3>
-                    </div>
+                    <div class="category-header"><span class="category-icon">💻</span><h3>Programming</h3></div>
                     <div class="skills-list">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Shell Scripting</span>
-                        <span class="skill-tag">Software Engineering</span>
+                        <span class="skill-tag">Python</span><span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Shell Scripting</span><span class="skill-tag">Software Engineering</span>
                     </div>
                 </div>
             </div>
-
             <div class="credly-cta glass-card">
                 <i class="fas fa-certificate credly-icon"></i>
                 <h3>View All Certifications</h3>
-                <p>Check out my verified digital badges and certifications on Credly</p>
+                <p>Check out my verified digital badges on Credly</p>
                 <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="modern-btn primary-btn">
                     <i class="fas fa-external-link-alt"></i> Visit Credly Profile
                 </a>
@@ -288,10 +222,236 @@
         </div>
     </section>
 
-    <!-- Projects Section - Keep your existing projects section here -->
-    <!-- ... Your existing projects section code ... -->
+    <!-- Projects Section -->
+    <section id="projects" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">My Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="project-stats">
+                <div class="stat-card glass-card"><i class="fas fa-project-diagram"></i><h3>11</h3><p>Total Projects</p></div>
+                <div class="stat-card glass-card"><i class="fas fa-network-wired"></i><h3>8</h3><p>Networking</p></div>
+                <div class="stat-card glass-card"><i class="fas fa-server"></i><h3>1</h3><p>Server</p></div>
+                <div class="stat-card glass-card"><i class="fas fa-shield-alt"></i><h3>1</h3><p>Security</p></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all"><i class="fas fa-th"></i> All</button>
+                <button class="filter-btn" data-filter="server"><i class="fas fa-server"></i> Server</button>
+                <button class="filter-btn" data-filter="networking"><i class="fas fa-network-wired"></i> Networking</button>
+                <button class="filter-btn" data-filter="hardware"><i class="fas fa-tools"></i> Hardware</button>
+                <button class="filter-btn" data-filter="security"><i class="fas fa-shield-alt"></i> Security</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Wi-Fi NVR -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/nvr1.jpg" alt="Wi-Fi NVR" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/nvr1.jpg" onclick="openProjectModal('nvr', 0)">
+                            <img src="projects/nvr2.jpg" onclick="openProjectModal('nvr', 1)">
+                            <img src="projects/nvr3.jpg" onclick="openProjectModal('nvr', 2)">
+                            <span class="more-photos" onclick="openProjectModal('nvr', 0)">+6 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Wi-Fi NVR Surveillance System</h3>
+                        <p>Complete Wi-Fi NVR system with dual LAN, wireless camera pairing, and mobile app access.</p>
+                        <div class="project-tags"><span>NVR</span><span>Wi-Fi</span><span>CCTV</span><span>Remote</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('nvr', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+                <!-- Project 2: Access Point -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/ap1.jpg" alt="Access Point" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/ap1.jpg" onclick="openProjectModal('accesspoint', 0)">
+                            <img src="projects/ap2.jpg" onclick="openProjectModal('accesspoint', 1)">
+                            <img src="projects/ap3.jpg" onclick="openProjectModal('accesspoint', 2)">
+                            <span class="more-photos" onclick="openProjectModal('accesspoint', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Wireless Access Point Configuration</h3>
+                        <p>Complete wireless AP setup with SSID configuration and WPA2 security implementation.</p>
+                        <div class="project-tags"><span>Linksys</span><span>WPA2</span><span>Wireless</span><span>SSID</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('accesspoint', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+                <!-- Project 3: CCNA Test -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/ccna1.jpg" alt="CCNA Test" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/ccna1.jpg" onclick="openProjectModal('ccnatest', 0)">
+                            <img src="projects/ccna2.jpg" onclick="openProjectModal('ccnatest', 1)">
+                            <img src="projects/ccna3.jpg" onclick="openProjectModal('ccnatest', 2)">
+                            <span class="more-photos" onclick="openProjectModal('ccnatest', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CCNA Semester 02 Practical Assessment</h3>
+                        <p>Comprehensive networking test with VLAN, trunking, inter-VLAN routing, and port security.</p>
+                        <div class="project-tags"><span>CCNAv7</span><span>VLANs</span><span>Trunking</span><span>IPv6</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('ccnatest', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+                <!-- Project 4: CCTV DVR -->
+                <div class="project-item glass-card" data-category="security">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/dvr1.jpg" alt="CCTV DVR" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/dvr1.jpg" onclick="openProjectModal('cctv', 0)">
+                            <img src="projects/dvr2.jpg" onclick="openProjectModal('cctv', 1)">
+                            <img src="projects/dvr3.jpg" onclick="openProjectModal('cctv', 2)">
+                            <span class="more-photos" onclick="openProjectModal('cctv', 0)">+2 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CCTV DVR Setup & Integration</h3>
+                        <p>Professional CCTV deployment with camera config, remote access, and mobile monitoring.</p>
+                        <div class="project-tags"><span>CCTV</span><span>DVR</span><span>Remote</span><span>Surveillance</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('cctv', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+                <!-- Project 5: DHCP Relay -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/dhcp1.jpg" alt="DHCP Relay" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/dhcp1.jpg" onclick="openProjectModal('dhcprelay', 0)">
+                            <img src="projects/dhcp2.jpg" onclick="openProjectModal('dhcprelay', 1)">
+                            <img src="projects/dhcp3.jpg" onclick="openProjectModal('dhcprelay', 2)">
+                            <span class="more-photos" onclick="openProjectModal('dhcprelay', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DHCP Relay Agent Configuration</h3>
+                        <p>Multi-router DHCP relay with static routing and Windows Server OS configuration.</p>
+                        <div class="project-tags"><span>DHCP</span><span>Relay</span><span>Routing</span><span>Server</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('dhcprelay', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+                <!-- Project 6: Server -->
+                <div class="project-item glass-card" data-category="server">
+                    <div class="project-images">
+                        <img src="projects/server1.jpg" alt="Server" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/server1.jpg" onclick="openProjectModal('server', 0)">
+                            <img src="projects/server2.jpg" onclick="openProjectModal('server', 1)">
+                            <img src="projects/server3.jpg" onclick="openProjectModal('server', 2)">
+                            <span class="more-photos" onclick="openProjectModal('server', 0)">+6 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Windows Server Deployment</h3>
+                        <p>Complete server deployment with RAID, Active Directory, DNS, DHCP & WDS.</p>
+                        <div class="project-tags"><span>Server</span><span>RAID</span><span>AD</span><span>DNS/DHCP</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('server', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+                <!-- Project 7: Cisco ACLs -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/cisco1.jpg" alt="Cisco ACLs" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/cisco1.jpg" onclick="openProjectModal('cisco', 0)">
+                            <img src="projects/cisco2.jpg" onclick="openProjectModal('cisco', 1)">
+                            <img src="projects/cisco3.jpg" onclick="openProjectModal('cisco', 2)">
+                            <span class="more-photos" onclick="openProjectModal('cisco', 0)">+2 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cisco Extended ACLs Security</h3>
+                        <p>Secured custom web page with Cisco Extended ACLs and tested access control.</p>
+                        <div class="project-tags"><span>Cisco</span><span>ACLs</span><span>Security</span><span>Wi-Fi</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('cisco', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+                <!-- Project 8: Mac Repair -->
+                <div class="project-item glass-card" data-category="hardware">
+                    <div class="project-images">
+                        <img src="projects/mac1.jpg" alt="Mac Repair" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/mac1.jpg" onclick="openProjectModal('mac', 0)">
+                            <img src="projects/mac2.jpg" onclick="openProjectModal('mac', 1)">
+                            <img src="projects/mac3.jpg" onclick="openProjectModal('mac', 2)">
+                            <span class="more-photos" onclick="openProjectModal('mac', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mac Desktop & Workstation Repair</h3>
+                        <p>Full service repair including power supply and display replacement.</p>
+                        <div class="project-tags"><span>Mac</span><span>Hardware</span><span>Repair</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('mac', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+                <!-- Project 9: ISP Lab -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/isp1.jpg" alt="ISP Lab" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/isp1.jpg" onclick="openProjectModal('isp', 0)">
+                            <img src="projects/isp2.jpg" onclick="openProjectModal('isp', 1)">
+                            <img src="projects/isp3.jpg" onclick="openProjectModal('isp', 2)">
+                            <span class="more-photos" onclick="openProjectModal('isp', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ISP Environment Simulation</h3>
+                        <p>Simulated ISP environment using 4G router with Cisco NAT overload (PAT).</p>
+                        <div class="project-tags"><span>4G</span><span>NAT/PAT</span><span>Cisco</span><span>PT</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('isp', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+                <!-- Project 10: ASD Lab -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/asd1.jpg" alt="ASD Lab" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/asd1.jpg" onclick="openProjectModal('asd', 0)">
+                            <img src="projects/asd2.jpg" onclick="openProjectModal('asd', 1)">
+                            <img src="projects/asd3.jpg" onclick="openProjectModal('asd', 2)">
+                            <span class="more-photos" onclick="openProjectModal('asd', 0)">+17 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ASD Lab Network Infrastructure</h3>
+                        <p>Built complete wired and wireless network with CAT6 cabling and access points.</p>
+                        <div class="project-tags"><span>CAT6</span><span>AP</span><span>LAN</span><span>NVTI</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('asd', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+                <!-- Project 11: NAT OSPF -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/nat1.jpg" alt="NAT OSPF" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/nat1.jpg" onclick="openProjectModal('nat', 0)">
+                            <img src="projects/nat2.jpg" onclick="openProjectModal('nat', 1)">
+                            <img src="projects/nat3.jpg" onclick="openProjectModal('nat', 2)">
+                            <span class="more-photos" onclick="openProjectModal('nat', 0)">+2 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>NAT Overload with OSPF</h3>
+                        <p>Implemented Cisco CCNA NAT Overload with OSPF routing protocol.</p>
+                        <div class="project-tags"><span>NAT</span><span>OSPF</span><span>CCNA</span><span>Routing</span></div>
+                        <button class="view-project-btn" onclick="openProjectModal('nat', 0)"><i class="fas fa-images"></i> View Photos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- NEW: Blog Section -->
+    <!-- Blog Section -->
     <section id="blog" class="modern-section fade-in">
         <div class="container">
             <div class="section-header">
@@ -299,100 +459,58 @@
                 <h2 class="section-title">Technical Blog</h2>
                 <div class="title-underline"></div>
             </div>
-            
             <div class="blog-grid">
                 <article class="glass-card blog-card">
-                    <div class="blog-image">
-                        <span class="blog-category">Networking</span>
-                        <i class="fas fa-network-wired"></i>
-                    </div>
+                    <div class="blog-image"><span class="blog-category">Networking</span><i class="fas fa-network-wired"></i></div>
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> Nov 15, 2024</span>
-                            <span><i class="far fa-clock"></i> 8 min read</span>
-                        </div>
-                        <h3>VLAN Configuration Best Practices for Enterprise Networks</h3>
-                        <p>Learn how to properly segment your network using VLANs for improved security, better traffic management, and enhanced performance in enterprise environments.</p>
+                        <div class="blog-meta"><span><i class="far fa-calendar"></i> Nov 15, 2024</span><span><i class="far fa-clock"></i> 8 min</span></div>
+                        <h3>VLAN Configuration Best Practices</h3>
+                        <p>Learn how to properly segment your network using VLANs for improved security and performance in enterprise environments.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-                
                 <article class="glass-card blog-card">
-                    <div class="blog-image blog-image-security">
-                        <span class="blog-category">Security</span>
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                    <div class="blog-image blog-image-security"><span class="blog-category">Security</span><i class="fas fa-shield-alt"></i></div>
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> Nov 10, 2024</span>
-                            <span><i class="far fa-clock"></i> 6 min read</span>
-                        </div>
-                        <h3>Cisco Extended ACLs: A Complete Security Guide</h3>
-                        <p>Understanding Extended Access Control Lists and how to implement comprehensive network security policies on Cisco routers step by step.</p>
+                        <div class="blog-meta"><span><i class="far fa-calendar"></i> Nov 10, 2024</span><span><i class="far fa-clock"></i> 6 min</span></div>
+                        <h3>Cisco Extended ACLs: Complete Guide</h3>
+                        <p>Understanding Extended Access Control Lists and how to implement network security policies on Cisco routers.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-                
                 <article class="glass-card blog-card">
-                    <div class="blog-image blog-image-webdev">
-                        <span class="blog-category">Web Dev</span>
-                        <i class="fab fa-react"></i>
-                    </div>
+                    <div class="blog-image blog-image-webdev"><span class="blog-category">Web Dev</span><i class="fab fa-react"></i></div>
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> Nov 5, 2024</span>
-                            <span><i class="far fa-clock"></i> 10 min read</span>
-                        </div>
-                        <h3>Building Modern React Applications with Best Practices</h3>
-                        <p>A comprehensive guide to creating responsive, performant React applications using hooks, context API, and modern development patterns.</p>
+                        <div class="blog-meta"><span><i class="far fa-calendar"></i> Nov 5, 2024</span><span><i class="far fa-clock"></i> 10 min</span></div>
+                        <h3>Building Modern React Applications</h3>
+                        <p>A comprehensive guide to creating responsive, performant React applications using hooks and modern patterns.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-                
                 <article class="glass-card blog-card">
-                    <div class="blog-image blog-image-server">
-                        <span class="blog-category">Server</span>
-                        <i class="fas fa-server"></i>
-                    </div>
+                    <div class="blog-image blog-image-server"><span class="blog-category">Server</span><i class="fas fa-server"></i></div>
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> Oct 28, 2024</span>
-                            <span><i class="far fa-clock"></i> 12 min read</span>
-                        </div>
-                        <h3>Windows Server RAID Configuration & Deployment</h3>
-                        <p>Step-by-step tutorial on configuring RAID arrays, setting up Active Directory, DNS, DHCP, and Windows Deployment Services for enterprise use.</p>
+                        <div class="blog-meta"><span><i class="far fa-calendar"></i> Oct 28, 2024</span><span><i class="far fa-clock"></i> 12 min</span></div>
+                        <h3>Windows Server RAID & Deployment</h3>
+                        <p>Step-by-step tutorial on RAID arrays, Active Directory, DNS, DHCP, and Windows Deployment Services.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-                
                 <article class="glass-card blog-card">
-                    <div class="blog-image blog-image-dhcp">
-                        <span class="blog-category">Networking</span>
-                        <i class="fas fa-sitemap"></i>
-                    </div>
+                    <div class="blog-image blog-image-dhcp"><span class="blog-category">Networking</span><i class="fas fa-sitemap"></i></div>
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> Oct 20, 2024</span>
-                            <span><i class="far fa-clock"></i> 7 min read</span>
-                        </div>
-                        <h3>DHCP Relay Agent: Multi-Subnet Configuration</h3>
-                        <p>How to configure DHCP relay agents across multiple network segments with static routing and proper IP helper address configuration.</p>
+                        <div class="blog-meta"><span><i class="far fa-calendar"></i> Oct 20, 2024</span><span><i class="far fa-clock"></i> 7 min</span></div>
+                        <h3>DHCP Relay Agent Configuration</h3>
+                        <p>How to configure DHCP relay agents across multiple network segments with IP helper address.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-                
                 <article class="glass-card blog-card">
-                    <div class="blog-image blog-image-ai">
-                        <span class="blog-category">AI</span>
-                        <i class="fas fa-robot"></i>
-                    </div>
+                    <div class="blog-image blog-image-ai"><span class="blog-category">AI</span><i class="fas fa-robot"></i></div>
                     <div class="blog-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> Oct 15, 2024</span>
-                            <span><i class="far fa-clock"></i> 5 min read</span>
-                        </div>
-                        <h3>Getting Started with Generative AI for Developers</h3>
-                        <p>An introduction to Generative AI concepts, tools like Microsoft Copilot, and how developers can leverage AI to boost productivity.</p>
+                        <div class="blog-meta"><span><i class="far fa-calendar"></i> Oct 15, 2024</span><span><i class="far fa-clock"></i> 5 min</span></div>
+                        <h3>Getting Started with Generative AI</h3>
+                        <p>An introduction to Generative AI concepts, tools like Microsoft Copilot, and boosting developer productivity.</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
@@ -400,10 +518,27 @@
         </div>
     </section>
 
-    <!-- Certificates Section - Keep your existing certificates section here -->
-    <!-- ... Your existing certificates section code ... -->
+    <!-- Certificates Section -->
+    <section id="certificates" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="certificates-carousel">
+                <div class="carousel-main">
+                    <button class="carousel-btn prev-btn" onclick="navigateCert(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <div class="certificate-display"></div>
+                    <button class="carousel-btn next-btn" onclick="navigateCert(1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="carousel-thumbnails"></div>
+                <div class="carousel-counter"><span class="current-cert">1</span> / <span class="total-certs">30</span></div>
+            </div>
+        </div>
+    </section>
 
-    <!-- NEW: Testimonials Section -->
+    <!-- Testimonials Section -->
     <section id="testimonials" class="modern-section fade-in">
         <div class="container">
             <div class="section-header">
@@ -411,79 +546,39 @@
                 <h2 class="section-title">Testimonials</h2>
                 <div class="title-underline"></div>
             </div>
-            
             <div class="testimonials-wrapper">
-                <button class="testimonial-arrow prev-testimonial" onclick="changeTestimonial(-1)">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                
+                <button class="testimonial-arrow" onclick="changeTestimonial(-1)"><i class="fas fa-chevron-left"></i></button>
                 <div class="glass-card testimonials-container">
                     <div class="testimonial-slider" id="testimonialSlider">
                         <div class="testimonial-card">
-                            <div class="testimonial-avatar">
-                                <span>S</span>
-                            </div>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="testimonial-text">"Waleed is an exceptional student with remarkable dedication to networking. His practical skills in CCNA labs are outstanding, and he always helps fellow students understand complex networking concepts. A true team player!"</p>
+                            <div class="testimonial-avatar"><span>S</span></div>
+                            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="testimonial-text">Waleed is an exceptional student with remarkable dedication to networking. His practical skills in CCNA labs are outstanding, and he always helps fellow students understand complex concepts.</p>
                             <h4 class="testimonial-name">Mr. Sampath Kumara</h4>
                             <p class="testimonial-role">CCNA Instructor, NVTI Narahenpita</p>
                         </div>
-                        
                         <div class="testimonial-card">
-                            <div class="testimonial-avatar">
-                                <span>A</span>
-                            </div>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="testimonial-text">"Working with Waleed on the ASD Lab network infrastructure project was a great experience. His attention to detail, problem-solving abilities, and technical knowledge made the project a complete success."</p>
+                            <div class="testimonial-avatar"><span>A</span></div>
+                            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="testimonial-text">Working with Waleed on the ASD Lab network infrastructure was a great experience. His attention to detail and problem-solving abilities made the project a success.</p>
                             <h4 class="testimonial-name">Ahmed Razak</h4>
                             <p class="testimonial-role">Project Team Member, NVTI</p>
                         </div>
-                        
                         <div class="testimonial-card">
-                            <div class="testimonial-avatar">
-                                <span>N</span>
-                            </div>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="testimonial-text">"Waleed's web development skills are truly impressive. He delivered a responsive, modern website that exceeded our expectations. His communication throughout the project was excellent. Highly recommended!"</p>
+                            <div class="testimonial-avatar"><span>N</span></div>
+                            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="testimonial-text">Waleed's web development skills are truly impressive. He delivered a responsive, modern website that exceeded our expectations. Highly recommended!</p>
                             <h4 class="testimonial-name">Nimal Perera</h4>
                             <p class="testimonial-role">Client - Web Development Project</p>
                         </div>
-                        
                         <div class="testimonial-card">
-                            <div class="testimonial-avatar">
-                                <span>K</span>
-                            </div>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="testimonial-text">"I was impressed by Waleed's quick learning ability and dedication. His knowledge in both networking and web development is remarkable for his experience level. He's destined for great things in tech!"</p>
+                            <div class="testimonial-avatar"><span>K</span></div>
+                            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="testimonial-text">I was impressed by Waleed's quick learning ability and dedication. His knowledge in both networking and web development is remarkable. He's destined for great things!</p>
                             <h4 class="testimonial-name">Kamal Fernando</h4>
                             <p class="testimonial-role">Senior Network Engineer</p>
                         </div>
                     </div>
-                    
                     <div class="testimonial-nav" id="testimonialNav">
                         <div class="testimonial-dot active" data-index="0"></div>
                         <div class="testimonial-dot" data-index="1"></div>
@@ -491,15 +586,12 @@
                         <div class="testimonial-dot" data-index="3"></div>
                     </div>
                 </div>
-                
-                <button class="testimonial-arrow next-testimonial" onclick="changeTestimonial(1)">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+                <button class="testimonial-arrow" onclick="changeTestimonial(1)"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section with Form -->
+    <!-- Contact Section -->
     <section id="contact" class="modern-section fade-in">
         <div class="container">
             <div class="section-header">
@@ -507,120 +599,44 @@
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="title-underline"></div>
             </div>
-            
             <div class="contact-grid">
-                <div class="contact-card glass-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <a href="mailto:wajiwaleed@gmail.com">wajiwaleed@gmail.com</a>
-                </div>
-                
-                <div class="contact-card glass-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Phone</h3>
-                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank">+94 76 850 350 8</a>
-                </div>
-                
-                <div class="contact-card glass-card">
-                    <i class="fab fa-linkedin"></i>
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank">Connect on LinkedIn</a>
-                </div>
-                
-                <div class="contact-card glass-card">
-                    <i class="fab fa-github"></i>
-                    <h3>GitHub</h3>
-                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank">View My Projects</a>
-                </div>
+                <div class="contact-card glass-card"><i class="fas fa-envelope"></i><h3>Email</h3><a href="mailto:wajiwaleed@gmail.com">wajiwaleed@gmail.com</a></div>
+                <div class="contact-card glass-card"><i class="fas fa-phone"></i><h3>Phone</h3><a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank">+94 76 850 350 8</a></div>
+                <div class="contact-card glass-card"><i class="fab fa-linkedin"></i><h3>LinkedIn</h3><a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank">Connect on LinkedIn</a></div>
+                <div class="contact-card glass-card"><i class="fab fa-github"></i><h3>GitHub</h3><a href="https://github.com/MOHAMED2005WALEED" target="_blank">View My Projects</a></div>
             </div>
-
-            <!-- NEW: Contact Form -->
+            <!-- Contact Form -->
             <div class="contact-form-wrapper">
                 <div class="glass-card contact-form-container">
-                    <div class="form-header">
-                        <h3><i class="fas fa-paper-plane"></i> Send Me a Message</h3>
-                        <p>Have a project in mind or want to collaborate? Fill out the form below!</p>
-                    </div>
-                    
+                    <div class="form-header"><h3><i class="fas fa-paper-plane"></i> Send Me a Message</h3><p>Have a project in mind? Fill out the form below!</p></div>
                     <form id="contactForm" class="contact-form">
                         <div class="form-row">
-                            <div class="form-group">
-                                <label for="userName"><i class="fas fa-user"></i> Your Name</label>
-                                <input type="text" id="userName" name="userName" placeholder="Enter your full name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="userEmail"><i class="fas fa-envelope"></i> Email Address</label>
-                                <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email" required>
-                            </div>
+                            <div class="form-group"><label for="userName"><i class="fas fa-user"></i> Your Name</label><input type="text" id="userName" name="userName" placeholder="Enter your full name" required></div>
+                            <div class="form-group"><label for="userEmail"><i class="fas fa-envelope"></i> Email</label><input type="email" id="userEmail" name="userEmail" placeholder="Enter your email" required></div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="subject"><i class="fas fa-tag"></i> Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message"><i class="fas fa-comment-alt"></i> Your Message</label>
-                            <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn" id="submitBtn">
-                            <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
-                            <span class="btn-loading" style="display: none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
-                        </button>
+                        <div class="form-group"><label for="subject"><i class="fas fa-tag"></i> Subject</label><input type="text" id="subject" name="subject" placeholder="What's this about?" required></div>
+                        <div class="form-group"><label for="message"><i class="fas fa-comment-alt"></i> Message</label><textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea></div>
+                        <button type="submit" class="submit-btn" id="submitBtn"><span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span><span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span></button>
                     </form>
-                    
                     <div class="form-status" id="formStatus"></div>
                 </div>
             </div>
-
-            <!-- Social Links -->
+            <!-- Social Profile -->
             <div class="social-profile glass-card">
-                <div class="social-avatar">
-                    <img src="IMG_20240803_165730_105.webp" alt="Mohamed Waleed Profile">
-                </div>
+                <div class="social-avatar"><img src="IMG_20240803_165730_105.webp" alt="Mohamed Waleed"></div>
                 <h2 class="social-name">𝕎𝕒𝕝𝕚𝕚..𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝</h2>
                 <p class="social-bio">Connecting the dots between dreams and reality ✨</p>
-                
                 <div class="social-grid">
-                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-card" aria-label="Credly Profile">
-                        <i class="fas fa-award"></i>
-                        <span>Credly</span>
-                    </a>
-                    <a href="https://www.instagram.com/waleed_2005" target="_blank" class="social-card" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="https://www.tiktok.com/@walii..official" target="_blank" class="social-card" aria-label="TikTok">
-                        <i class="fab fa-tiktok"></i>
-                        <span>TikTok</span>
-                    </a>
-                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank" class="social-card" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>WhatsApp</span>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100075124244357" target="_blank" class="social-card" aria-label="Facebook">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="https://x.com/WALEED_2005" target="_blank" class="social-card" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
-                    </a>
-                    <a href="https://www.snapchat.com/add/waleed20050325" target="_blank" class="social-card" aria-label="Snapchat">
-                        <i class="fab fa-snapchat"></i>
-                        <span>Snapchat</span>
-                    </a>
-                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-card" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
+                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-card"><i class="fas fa-award"></i><span>Credly</span></a>
+                    <a href="https://www.instagram.com/waleed_2005" target="_blank" class="social-card"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                    <a href="https://www.tiktok.com/@walii..official" target="_blank" class="social-card"><i class="fab fa-tiktok"></i><span>TikTok</span></a>
+                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank" class="social-card"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+                    <a href="https://www.facebook.com/profile.php?id=100075124244357" target="_blank" class="social-card"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+                    <a href="https://x.com/WALEED_2005" target="_blank" class="social-card"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                    <a href="https://www.snapchat.com/add/waleed20050325" target="_blank" class="social-card"><i class="fab fa-snapchat"></i><span>Snapchat</span></a>
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-card"><i class="fab fa-github"></i><span>GitHub</span></a>
                 </div>
-
-                <div class="youtube-embed">
-                    <iframe src="https://www.youtube.com/embed/9WanQhhrsd4" title="YouTube Video" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/9WanQhhrsd4" title="YouTube Video" frameborder="0" allowfullscreen></iframe></div>
             </div>
         </div>
     </section>
@@ -630,43 +646,23 @@
         <div class="footer-content">
             <p>&copy; 2025 Mohamed Waleed. Crafted with <i class="fas fa-heart"></i> and Code</p>
             <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#timeline">Journey</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#blog">Blog</a>
-                <a href="#certificates">Certificates</a>
-                <a href="#testimonials">Reviews</a>
-                <a href="#contact">Contact</a>
+                <a href="#about">About</a><a href="#timeline">Journey</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+                <a href="#blog">Blog</a><a href="#certificates">Certs</a><a href="#testimonials">Reviews</a><a href="#contact">Contact</a>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to Top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <!-- Scroll to Top -->
+    <button class="scroll-top" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
 
     <!-- Project Modal -->
     <div id="projectModal" class="project-modal">
-        <button class="modal-close" onclick="closeProjectModal()" aria-label="Close Modal">
-            <i class="fas fa-times"></i>
-        </button>
-        <button class="modal-prev" onclick="changeProjectPhoto(-1)" aria-label="Previous Photo">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="modal-next" onclick="changeProjectPhoto(1)" aria-label="Next Photo">
-            <i class="fas fa-chevron-right"></i>
-        </button>
+        <button class="modal-close" onclick="closeProjectModal()"><i class="fas fa-times"></i></button>
+        <button class="modal-prev" onclick="changeProjectPhoto(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="modal-next" onclick="changeProjectPhoto(1)"><i class="fas fa-chevron-right"></i></button>
         <div class="modal-content">
             <img id="modalImage" src="" alt="Project Photo">
-            <div class="modal-caption">
-                <h3 id="modalTitle"></h3>
-                <p id="modalDescription"></p>
-                <span class="photo-counter">
-                    <span id="currentPhoto">1</span> / <span id="totalPhotos">10</span>
-                </span>
-            </div>
+            <div class="modal-caption"><h3 id="modalTitle"></h3><p id="modalDescription"></p><span class="photo-counter"><span id="currentPhoto">1</span> / <span id="totalPhotos">10</span></span></div>
         </div>
         <div class="modal-thumbnails" id="modalThumbnails"></div>
     </div>
