@@ -1,467 +1,676 @@
 <!DOCTYPE html>
-<html lang="si">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOHAMED WALEED - CV</title>
-    <style>
-        @page {
-            size: A4;
-            margin: 0;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #2b2b2b;
-            color: #e0e0e0;
-            line-height: 1.6;
-            padding: 40px;
-        }
-        
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            background: #3a3a3a;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #2b2b2b 0%, #3a3a3a 100%);
-            padding: 40px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-bottom: 3px solid #ff6b35;
-        }
-        
-        .header-left h1 {
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 5px;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
-        
-        .header-left .subtitle {
-            color: #ff6b35;
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 20px;
-        }
-        
-        .contact-info {
-            font-size: 12px;
-            line-height: 1.8;
-        }
-        
-        .contact-info div {
-            margin-bottom: 5px;
-        }
-        
-        .contact-info span {
-            color: #ff6b35;
-            margin-right: 8px;
-        }
-        
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid #ff6b35;
-            background: #555;
-        }
-        
-        .content {
-            padding: 40px 50px;
-        }
-        
-        .section {
-            margin-bottom: 35px;
-        }
-        
-        .section-title {
-            font-size: 20px;
-            font-weight: 700;
-            color: #ffffff;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-            border-bottom: 2px solid #ff6b35;
-            padding-bottom: 8px;
-        }
-        
-        .education-item,
-        .cert-item {
-            margin-bottom: 25px;
-        }
-        
-        .date-location {
-            display: flex;
-            justify-content: space-between;
-            color: #999;
-            font-size: 13px;
-            margin-bottom: 8px;
-        }
-        
-        .institution {
-            font-size: 16px;
-            font-weight: 600;
-            color: #ff6b35;
-            margin-bottom: 5px;
-        }
-        
-        .degree {
-            font-size: 15px;
-            font-weight: 600;
-            color: #e0e0e0;
-            margin-bottom: 8px;
-        }
-        
-        .details {
-            font-size: 13px;
-            color: #b0b0b0;
-            line-height: 1.7;
-            padding-left: 15px;
-        }
-        
-        .details li {
-            margin-bottom: 3px;
-        }
-        
-        .summary-text {
-            font-size: 14px;
-            line-height: 1.8;
-            color: #c0c0c0;
-            text-align: justify;
-        }
-        
-        .cert-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-        
-        .cert-item {
-            margin-bottom: 15px;
-        }
-        
-        .cert-name {
-            font-size: 14px;
-            font-weight: 600;
-            color: #e0e0e0;
-            margin-bottom: 3px;
-        }
-        
-        .cert-org {
-            font-size: 12px;
-            color: #999;
-        }
-        
-        .course-item {
-            margin-bottom: 15px;
-        }
-        
-        .course-name {
-            font-size: 14px;
-            font-weight: 600;
-            color: #e0e0e0;
-            margin-bottom: 3px;
-        }
-        
-        .course-org {
-            font-size: 12px;
-            color: #999;
-        }
-        
-        .languages {
-            display: flex;
-            justify-content: space-between;
-            gap: 30px;
-        }
-        
-        .lang-item {
-            flex: 1;
-        }
-        
-        .lang-name {
-            font-size: 14px;
-            font-weight: 600;
-            color: #e0e0e0;
-            margin-bottom: 5px;
-        }
-        
-        .lang-level {
-            font-size: 12px;
-            color: #999;
-            margin-bottom: 8px;
-        }
-        
-        .dots {
-            display: flex;
-            gap: 5px;
-        }
-        
-        .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #ff6b35;
-        }
-        
-        .dot.empty {
-            background: #555;
-        }
-        
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        
-        .skill-tag {
-            background: #2b2b2b;
-            color: #e0e0e0;
-            padding: 8px 16px;
-            border-radius: 5px;
-            font-size: 13px;
-            font-weight: 500;
-            border: 1px solid #555;
-        }
-        
-        .footer {
-            background: #2b2b2b;
-            padding: 20px 50px;
-            text-align: center;
-            font-size: 11px;
-            color: #888;
-            border-top: 2px solid #444;
-        }
-        
-        @media print {
-            body {
-                padding: 0;
-                background: white;
-            }
-            
-            .container {
-                box-shadow: none;
-            }
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mohamed Wajihadeen Mohamed Waleed - Modern Portfolio</title>
+    <meta name="description" content="Full-Stack Web Developer & Network Technician specializing in CCNA, React, Node.js, and modern web technologies">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://portfolio-5ff36.web.app/assets/logo.png">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <div class="header-left">
-                <h1>MOHAMED WALEED</h1>
-                <div class="subtitle">Computer Network Technician</div>
-                <div class="contact-info">
-                    <div><span>📞</span> +94768503508</div>
-                    <div><span>✉️</span> wajiwaleed@gmail.com</div>
-                    <div><span>🌐</span> https://mohamed2005waleed.github.io/MY-WED/</div>
-                    <div><span>📍</span> 67/16 New Road, Makuluwa, Galle</div>
-                </div>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-letter">M</span>
+                <span class="logo-letter">W</span>
             </div>
-            <div class="profile-pic"></div>
-        </div>
-        
-        <!-- Content -->
-        <div class="content">
-            <!-- Education -->
-            <div class="section">
-                <h2 class="section-title">Education</h2>
-                
-                <div class="education-item">
-                    <div class="date-location">
-                        <span>01/2025 - 12/2025</span>
-                        <span>354 Elvitigala Mawatha, Narahenpita, Colombo 05, Sri Lanka</span>
-                    </div>
-                    <div class="degree">CCNA+ Computer Network Technician (NVQ Level IV)</div>
-                    <div class="institution">National Vocational Training Institute (NVTI)</div>
-                </div>
-                
-                <div class="education-item">
-                    <div class="date-location">
-                        <span>01/2022 - 11/2024</span>
-                        <span>Galle</span>
-                    </div>
-                    <div class="degree">Advanced Level (A/L)</div>
-                    <div class="institution">Olcott College</div>
-                    <ul class="details">
-                        <li>Completed Advanced Level (A/L) in Commerce Stream</li>
-                        <li>Index No: 1847821</li>
-                        <li>Subjects & Grades: Accounting – A, Business Studies - B, Information and Communication Technology (ICT) - A</li>
-                    </ul>
-                </div>
-                
-                <div class="education-item">
-                    <div class="date-location">
-                        <span>01/2011 - 06/2021</span>
-                        <span>Galle</span>
-                    </div>
-                    <div class="degree">Completed G.C.E. Ordinary Level</div>
-                    <div class="institution">Sudharma College</div>
-                    <ul class="details">
-                        <li>Completed G.C.E. Ordinary Level (O/L) Examination</li>
-                        <li>Index No: 11266848 | Grades: ICT-A, Business & Accounting Studies - B, Art - B, History - B, Mathematics - C, Science - C, Islam - C, Sinhala C, English - S</li>
-                    </ul>
-                </div>
-                
-                <div class="education-item">
-                    <div class="date-location">
-                        <span>01/2024 - 01/2025</span>
-                        <span>Moratuwa, Sri Lanka</span>
-                    </div>
-                    <div class="degree">Full Stack Developer Programme</div>
-                    <div class="institution">University of Moratuwa</div>
-                </div>
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Loading Portfolio...</p>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
             </div>
-            
-            <!-- Summary -->
-            <div class="section">
-                <h2 class="section-title">Summary</h2>
-                <p class="summary-text">
-                    Aspiring Network Technician Practical and detail-oriented Network Technician with foundational Cisco networking skills and NVQ Level 4 training in Computer Network Technology. Currently pursuing CCNA certification and experience in designing and simulating LAN topologies, implementing VLANs and basic access and control, installing/configuring Windows and Linux server environments for small-office scenarios. Strong troubleshooting mindset, clear communicator, and committed to fast learning and operational excellence in network support roles.
-                </p>
-            </div>
-            
-            <!-- Certification -->
-            <div class="section">
-                <h2 class="section-title">Certification</h2>
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <div class="cert-name">CCNA: Switching, Routing, and Wireless Essentials</div>
-                        <div class="cert-org">Cisco</div>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-name">CCNA: Introduction to Networks</div>
-                        <div class="cert-org">Cisco</div>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-name">Prompt Design in Vertex AI Skill Badge</div>
-                        <div class="cert-org">Google Cloud</div>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-name">Linux Unhatched</div>
-                        <div class="cert-org">Cisco</div>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-name">Professional Practice in Software Development</div>
-                        <div class="cert-org">Department of Computer Science & Engineering, University of Moratuwa</div>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-name">Server-side Web Programming</div>
-                        <div class="cert-org">Department of Information Technology, University of Moratuwa</div>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-name">Front-End Web Development</div>
-                        <div class="cert-org">Department of Information Technology, University of Moratuwa</div>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-name">Python Programming</div>
-                        <div class="cert-org">Department of Computer Science & Engineering, University of Moratuwa</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Training / Courses -->
-            <div class="section">
-                <h2 class="section-title">Training / Courses</h2>
-                <div class="course-item">
-                    <div class="course-name">NVQ Level 4 – Computer Network Technology (CCNA Program)</div>
-                    <div class="course-org">Vocational Training Authority (VTA) – Narahenpita Training Centre</div>
-                </div>
-            </div>
-            
-            <!-- Languages -->
-            <div class="section">
-                <h2 class="section-title">Languages</h2>
-                <div class="languages">
-                    <div class="lang-item">
-                        <div class="lang-name">English</div>
-                        <div class="lang-level">Advanced</div>
-                        <div class="dots">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot empty"></span>
-                        </div>
-                    </div>
-                    <div class="lang-item">
-                        <div class="lang-name">Sinhala</div>
-                        <div class="lang-level">Proficient</div>
-                        <div class="dots">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot empty"></span>
-                        </div>
-                    </div>
-                    <div class="lang-item">
-                        <div class="lang-name">Tamil</div>
-                        <div class="lang-level">Advanced</div>
-                        <div class="dots">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot empty"></span>
-                            <span class="dot empty"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Skills -->
-            <div class="section">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-container">
-                    <span class="skill-tag">Cisco</span>
-                    <span class="skill-tag">Gmail</span>
-                    <span class="skill-tag">GitHub</span>
-                    <span class="skill-tag">SWITCHING</span>
-                    <span class="skill-tag">VLAN</span>
-                    <span class="skill-tag">ACLS</span>
-                    <span class="skill-tag">CCNA</span>
-                    <span class="skill-tag">Windows Server</span>
-                    <span class="skill-tag">Linux</span>
-                    <span class="skill-tag">TCP</span>
-                    <span class="skill-tag">WAN</span>
-                    <span class="skill-tag">DHCP</span>
-                    <span class="skill-tag">Cisco Packet Tracer</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">PHP</span>
-                    <span class="skill-tag">Adobe Photoshop</span>
-                    <span class="skill-tag">Illustrator</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            www.enhancv.com | Powered by Enhancv
         </div>
     </div>
-    
-    <script>
-        // Optional: Add print button
-        document.addEventListener('keydown', function(e) {
-            if (e.ctrlKey && e.key === 'p') {
-                e.preventDefault();
-                window.print();
-            }
-        });
-    </script>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+        <a href="#timeline" class="nav-link"><i class="fas fa-road"></i> Journey</a>
+        <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+        <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+        <a href="#blog" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
+        <a href="#certificates" class="nav-link"><i class="fas fa-certificate"></i> Certs</a>
+        <a href="#testimonials" class="nav-link"><i class="fas fa-quote-left"></i> Reviews</a>
+        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <!-- Header Section with Profile Picture -->
+    <header class="modern-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-wrapper">
+                    <div class="profile-ring"></div>
+                    <div class="profile-img-container">
+                        <img src="DSC6284_01.jpg" alt="Mohamed Waleed" class="profile-img">
+                    </div>
+                </div>
+                
+                <div class="header-text">
+                    <h1 class="glitch-text" data-text="Mohamed Wajihadeen Mohamed Waleed">Mohamed Wajihadeen Mohamed Waleed</h1>
+                    <div class="typing-container">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="subtitle">Passionate about Technology, Innovation & Connectivity 🚀</p>
+                    
+                    <div class="header-buttons">
+                        <a href="uploads/Waleed_CV.pdf" target="_blank" class="modern-btn primary-btn">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="modern-btn secondary-btn">
+                            <i class="fas fa-paper-plane"></i> Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Full-Stack Developer</h3>
+                    <p>Specialized in creating responsive, interactive, and user-friendly web applications using modern technologies like React, Node.js, and MongoDB.</p>
+                </div>
+                
+                <div class="about-card glass-card">
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Network Technician</h3>
+                    <p>Pursuing NVQ Level 4 – Computer Network Technician (CISCO CCNAv7) at NVTI, Narahenpita. Expert in LAN/WAN, VLANs, DHCP, and Routing.</p>
+                </div>
+                
+                <div class="about-card glass-card">
+                    <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Tech Enthusiast</h3>
+                    <p>Passionate about learning, problem-solving, and contributing to open-source projects. Always exploring new technologies.</p>
+                </div>
+            </div>
+            
+            <div class="about-text glass-card">
+                <p class="highlight-text">
+                    Hi, I'm <strong>Mohamed Wajihadeen Mohamed Waleed</strong>, a passionate 
+                    <strong>Full-Stack Web Developer</strong> and <strong>Network Technician</strong> from Sri Lanka 🇱🇰
+                </p>
+                <p>With a strong foundation in front-end and back-end development, I continuously explore new technologies and frameworks to enhance my skills. I enjoy working with React, Node.js, and MongoDB to build scalable, modern full-stack applications.</p>
+                <p>I'm deeply passionate about learning, problem-solving, and contributing to open-source projects. Let's build something amazing together!</p>
+                <div class="social-links">
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-icon" aria-label="Credly"><i class="fas fa-award"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Timeline Section -->
+    <section id="timeline" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">My Journey</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3>NVQ Level 4 - CCNA</h3>
+                        <p>Computer Network Technician at NVTI Narahenpita. Mastering Cisco networking, routing protocols, VLANs, and network security.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-icon"><i class="fas fa-code"></i></div>
+                        <span class="timeline-date">2023 - 2024</span>
+                        <h3>Full-Stack Development</h3>
+                        <p>Completed multiple certifications from University of Moratuwa in Web Development, Python Programming, and Software Engineering.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-icon"><i class="fas fa-shield-alt"></i></div>
+                        <span class="timeline-date">2024</span>
+                        <h3>Cybersecurity Certified</h3>
+                        <p>Achieved ISC2 Certified in Cybersecurity (CC) credential. Completed all 5 security domains including Network Security and Access Controls.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-icon"><i class="fas fa-robot"></i></div>
+                        <span class="timeline-date">2024</span>
+                        <h3>AI & Automation</h3>
+                        <p>Completed Microsoft & LinkedIn Generative AI career essentials. Learned Responsible AI practices and Microsoft Copilot integration.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-icon"><i class="fas fa-server"></i></div>
+                        <span class="timeline-date">2024</span>
+                        <h3>Server Administration</h3>
+                        <p>Hands-on experience with Windows Server, RAID configuration, Active Directory, DNS, DHCP, and Windows Deployment Services.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-icon"><i class="fas fa-tools"></i></div>
+                        <span class="timeline-date">2023</span>
+                        <h3>Hardware Technician</h3>
+                        <p>Completed Cisco Computer Hardware Basics certification. Experience in Mac desktop repair, power supply replacement, and diagnostics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">🌐</span>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">🛰️</span>
+                        <h3>Networking & IT</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Cisco CCNA</span>
+                        <span class="skill-tag">LAN/WAN</span>
+                        <span class="skill-tag">VLANs</span>
+                        <span class="skill-tag">DHCP</span>
+                        <span class="skill-tag">NAT</span>
+                        <span class="skill-tag">Routing</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Windows Server</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">🤖</span>
+                        <h3>AI & Automation</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">AI for Business</span>
+                        <span class="skill-tag">Responsible AI</span>
+                        <span class="skill-tag">Microsoft Copilot</span>
+                        <span class="skill-tag">DevOps</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">💻</span>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                        <span class="skill-tag">Software Engineering</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="credly-cta glass-card">
+                <i class="fas fa-certificate credly-icon"></i>
+                <h3>View All Certifications</h3>
+                <p>Check out my verified digital badges and certifications on Credly</p>
+                <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="modern-btn primary-btn">
+                    <i class="fas fa-external-link-alt"></i> Visit Credly Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - Keep your existing projects section here -->
+    <!-- ... Your existing projects section code ... -->
+
+    <!-- NEW: Blog Section -->
+    <section id="blog" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Technical Blog</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="glass-card blog-card">
+                    <div class="blog-image">
+                        <span class="blog-category">Networking</span>
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Nov 15, 2024</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3>VLAN Configuration Best Practices for Enterprise Networks</h3>
+                        <p>Learn how to properly segment your network using VLANs for improved security, better traffic management, and enhanced performance in enterprise environments.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="glass-card blog-card">
+                    <div class="blog-image blog-image-security">
+                        <span class="blog-category">Security</span>
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Nov 10, 2024</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Cisco Extended ACLs: A Complete Security Guide</h3>
+                        <p>Understanding Extended Access Control Lists and how to implement comprehensive network security policies on Cisco routers step by step.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="glass-card blog-card">
+                    <div class="blog-image blog-image-webdev">
+                        <span class="blog-category">Web Dev</span>
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Nov 5, 2024</span>
+                            <span><i class="far fa-clock"></i> 10 min read</span>
+                        </div>
+                        <h3>Building Modern React Applications with Best Practices</h3>
+                        <p>A comprehensive guide to creating responsive, performant React applications using hooks, context API, and modern development patterns.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="glass-card blog-card">
+                    <div class="blog-image blog-image-server">
+                        <span class="blog-category">Server</span>
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Oct 28, 2024</span>
+                            <span><i class="far fa-clock"></i> 12 min read</span>
+                        </div>
+                        <h3>Windows Server RAID Configuration & Deployment</h3>
+                        <p>Step-by-step tutorial on configuring RAID arrays, setting up Active Directory, DNS, DHCP, and Windows Deployment Services for enterprise use.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="glass-card blog-card">
+                    <div class="blog-image blog-image-dhcp">
+                        <span class="blog-category">Networking</span>
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Oct 20, 2024</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>DHCP Relay Agent: Multi-Subnet Configuration</h3>
+                        <p>How to configure DHCP relay agents across multiple network segments with static routing and proper IP helper address configuration.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="glass-card blog-card">
+                    <div class="blog-image blog-image-ai">
+                        <span class="blog-category">AI</span>
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Oct 15, 2024</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>Getting Started with Generative AI for Developers</h3>
+                        <p>An introduction to Generative AI concepts, tools like Microsoft Copilot, and how developers can leverage AI to boost productivity.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section - Keep your existing certificates section here -->
+    <!-- ... Your existing certificates section code ... -->
+
+    <!-- NEW: Testimonials Section -->
+    <section id="testimonials" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title">Testimonials</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="testimonials-wrapper">
+                <button class="testimonial-arrow prev-testimonial" onclick="changeTestimonial(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="glass-card testimonials-container">
+                    <div class="testimonial-slider" id="testimonialSlider">
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <span>S</span>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Waleed is an exceptional student with remarkable dedication to networking. His practical skills in CCNA labs are outstanding, and he always helps fellow students understand complex networking concepts. A true team player!"</p>
+                            <h4 class="testimonial-name">Mr. Sampath Kumara</h4>
+                            <p class="testimonial-role">CCNA Instructor, NVTI Narahenpita</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <span>A</span>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Working with Waleed on the ASD Lab network infrastructure project was a great experience. His attention to detail, problem-solving abilities, and technical knowledge made the project a complete success."</p>
+                            <h4 class="testimonial-name">Ahmed Razak</h4>
+                            <p class="testimonial-role">Project Team Member, NVTI</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <span>N</span>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Waleed's web development skills are truly impressive. He delivered a responsive, modern website that exceeded our expectations. His communication throughout the project was excellent. Highly recommended!"</p>
+                            <h4 class="testimonial-name">Nimal Perera</h4>
+                            <p class="testimonial-role">Client - Web Development Project</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <span>K</span>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I was impressed by Waleed's quick learning ability and dedication. His knowledge in both networking and web development is remarkable for his experience level. He's destined for great things in tech!"</p>
+                            <h4 class="testimonial-name">Kamal Fernando</h4>
+                            <p class="testimonial-role">Senior Network Engineer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-nav" id="testimonialNav">
+                        <div class="testimonial-dot active" data-index="0"></div>
+                        <div class="testimonial-dot" data-index="1"></div>
+                        <div class="testimonial-dot" data-index="2"></div>
+                        <div class="testimonial-dot" data-index="3"></div>
+                    </div>
+                </div>
+                
+                <button class="testimonial-arrow next-testimonial" onclick="changeTestimonial(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">08</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card glass-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:wajiwaleed@gmail.com">wajiwaleed@gmail.com</a>
+                </div>
+                
+                <div class="contact-card glass-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank">+94 76 850 350 8</a>
+                </div>
+                
+                <div class="contact-card glass-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank">Connect on LinkedIn</a>
+                </div>
+                
+                <div class="contact-card glass-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank">View My Projects</a>
+                </div>
+            </div>
+
+            <!-- NEW: Contact Form -->
+            <div class="contact-form-wrapper">
+                <div class="glass-card contact-form-container">
+                    <div class="form-header">
+                        <h3><i class="fas fa-paper-plane"></i> Send Me a Message</h3>
+                        <p>Have a project in mind or want to collaborate? Fill out the form below!</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="userName"><i class="fas fa-user"></i> Your Name</label>
+                                <input type="text" id="userName" name="userName" placeholder="Enter your full name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="userEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                                <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment-alt"></i> Your Message</label>
+                            <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                            <span class="btn-loading" style="display: none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                        </button>
+                    </form>
+                    
+                    <div class="form-status" id="formStatus"></div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-profile glass-card">
+                <div class="social-avatar">
+                    <img src="IMG_20240803_165730_105.webp" alt="Mohamed Waleed Profile">
+                </div>
+                <h2 class="social-name">𝕎𝕒𝕝𝕚𝕚..𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝</h2>
+                <p class="social-bio">Connecting the dots between dreams and reality ✨</p>
+                
+                <div class="social-grid">
+                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-card" aria-label="Credly Profile">
+                        <i class="fas fa-award"></i>
+                        <span>Credly</span>
+                    </a>
+                    <a href="https://www.instagram.com/waleed_2005" target="_blank" class="social-card" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@walii..official" target="_blank" class="social-card" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank" class="social-card" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100075124244357" target="_blank" class="social-card" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://x.com/WALEED_2005" target="_blank" class="social-card" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://www.snapchat.com/add/waleed20050325" target="_blank" class="social-card" aria-label="Snapchat">
+                        <i class="fab fa-snapchat"></i>
+                        <span>Snapchat</span>
+                    </a>
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-card" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+
+                <div class="youtube-embed">
+                    <iframe src="https://www.youtube.com/embed/9WanQhhrsd4" title="YouTube Video" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Mohamed Waleed. Crafted with <i class="fas fa-heart"></i> and Code</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#timeline">Journey</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <button class="modal-close" onclick="closeProjectModal()" aria-label="Close Modal">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="modal-prev" onclick="changeProjectPhoto(-1)" aria-label="Previous Photo">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="modal-next" onclick="changeProjectPhoto(1)" aria-label="Next Photo">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Project Photo">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <span class="photo-counter">
+                    <span id="currentPhoto">1</span> / <span id="totalPhotos">10</span>
+                </span>
+            </div>
+        </div>
+        <div class="modal-thumbnails" id="modalThumbnails"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
